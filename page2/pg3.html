@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href = "pg2.css" rel = "stylesheet">
+        <style>
+            body
+            {
+                position: relative;
+                width: 1920px;
+                height: 1080px;
+
+                background: #F9F9F9;
+            }
+        </style>
+    </head>
+    <body>
+        <b class = "Title">გამოცდილება</b>
+        <p class = "PageNumber"> 2/3</p>
+        <hr id = "Line1">
+        <label id = "RezumeBackground">
+            <!-- <img id = "RezumeBackground" src = "Photos2/Rezume_background.png"> -->
+            <p id = "rezumeName">
+                >სახელი< >გვარი<
+            </p>
+
+            <img id = "rezumeEmail" src = "Photos2/EmailVector.png">
+            <img id = "rezumeNumber" src = "Photos2/PhoneVector.png">
+            <label id = "rezumeEmainAndNumber">
+                <b id = "rezumeEmailVal"> anzasdasasdasdasd@redberry.ge</b>
+                <p id = "rezumeNumberVal">+995 555 55 55 55</p>
+            </label>
+            <label id = "rezumeAboutMe">
+                <p id = "rezumeAboutMeTitle">ჩემს შესახებ</p>
+
+                <p id = "rezumeAboutMeVal" style = "font-family: 'HelveticaNeue';"></p>
+
+                <hr class = "rezumeLine1">
+            </label>
+            <img id = "weirdLogo" src = "Photos2/weirdLogo.png">
+        </label>
+        <div id = "Experience1" class = "Experience">
+            <div id = "frameExperience1" class = "frameExperience">
+                <label class = "Label">თანამდებობა</label>
+                <label id = "position1Label"class = "InputLabelLong">
+                    <input id = "position1" class = "InputFieldSmall" placeholder="დეველოპერი, დიზაინერი, ა.შ." onkeydown="checkInputVar(String(this.id), String(this.id) + 'Label')">
+                    <img id = "experienceAccepted1" class = "Accepted" src = "Photos2/Accepted.png" style = "display: none;">
+                    <img id = "experienceDenied1" class = "Denied" src = "Photos2/Denied.png" style = "display: none;">
+                </label>
+                <label class = "Hint">მინიმუმ 2 სიმბოლო</label>
+            </div>
+            <div id = "frameBoss1" class = "frameBoss">
+                <label class = "Label">დამსაქმებელი</label>
+                <label id = "employer1Label" class = "InputLabelLong">
+                    <input id = "employer1" class = "InputFieldSmall" placeholder="დამსაქმებელი" onkeydown="checkInputVar(String(this.id), String(this.id) + 'Label')">
+                    <img id = "experienceAccepted2" class = "Accepted" src = "Photos2/Accepted.png" style = "display: none;">
+                    <img id = "experienceDenied2"class = "Denied" src = "Photos2/Denied.png" style = "display: none;">
+                </label>
+                <label class = "Hint">მინიმუმ 2 სიმბოლო</label>
+            </div>
+            <div id="frameDateStart1" class = "frameDateStart">
+                <label class="Label">დაწყების რიცხვი</label>
+                <label id = "start_date1Label" class="InputLabelSmall">
+                    <input id = "start_date1" type="date" class="InputFieldSmall" onchange="checkStartDate(String(this.id))">
+                </label>
+            </div>
+            <div id="frameDateEnd1" class = "frameDateEnd">
+                <label class="Label">დამთავრების რიცხვი</label>
+                <label id = "end_date1Label" class="InputLabelSmall">
+                    <input id = "end_date1"type="date" class="InputFieldSmall" onchange="checkEndDate(String(this.id))">
+                </label>
+            </div>
+            <div id = "frameDescribe1" class = "frameDescribe">
+                <label class = "Label">აღწერა</label>
+                <label id = "experienceDescription1Label" class = "InputLabelHuge">
+                    <textarea id = "experienceDescription1" class = "InputFieldTall" placeholder="როლი თანამდებობაზე და ზოგადი აღწერა" onkeydown="notRequired(String(this.id))"></textarea>
+                </label>
+            </div>
+            <hr id = "Line2">
+        </div>
+
+        <img id = "Elipse" src = "Photos2/Ellipse 1.png" onclick="window.location.href='../startingPage/main.html'">
+        <img id = "Vector" src = "Photos2/Vector.png" onclick="window.location.href='../startingPage/main.html'">
+        <button id = "Button4" onclick="createNewHr()"></button>
+        <button id = "buttonBack1" class = "buttonBack" onclick="window.location.href='pg2.html'"></button>
+        <button id = "Next2" class = "Next" onclick="onNextPage()"></button>
+        <script src = "pg3.js"></script>
+    </body>
+</html>

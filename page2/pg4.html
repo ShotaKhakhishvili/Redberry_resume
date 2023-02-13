@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href = "pg2.css" rel = "stylesheet">
+        <style>
+            body
+            {
+                position: relative;
+                width: 1920px;
+                height: 1080px;
+
+                background: #F9F9F9;
+            }
+        </style>
+    </head>
+    <body>
+        <b class = "Title">განათლება</b>
+        <p class = "PageNumber"> 2/3</p>
+        <hr id = "Line1">
+        <label id = "RezumeBackground">
+            <!-- <img id = "RezumeBackground" src = "Photos2/Rezume_background.png"> -->
+            <b id = "rezumeName">
+                >სახელი< >გვარი<
+            </b>
+
+            <img id = "rezumeEmail" src = "Photos2/EmailVector.png">
+            <img id = "rezumeNumber" src = "Photos2/PhoneVector.png">
+            <label id = "rezumeEmainAndNumber">
+                <b id = "rezumeEmailVal"> mail@redberry.ge</b>
+                <p id = "rezumeNumberVal">+995 555 55 55 55</p>
+            </label>
+            <label id = "rezumeAboutMe">
+                <p id = "rezumeAboutMeTitle">ჩემს შესახებ</p>
+
+                <p id = "rezumeAboutMeVal" style = "font-family: 'HelveticaNeue';"></p>
+
+                <hr class = "rezumeLine1">
+            </label>
+            <div id = "rezumeExperience">
+                <b id = "rezumeExperienceTitle">გამოცდილება</b>
+                <div id = "rezumeExperienceFrame1" class = "rezumeExperienceFrame">
+                    <b id = "rezumeExperienceFrameTitle1" class = "rezumeExperienceFrameTitle">
+                        React Native Developer, Microsoft
+                    </b>
+                    <p id = "rezumeExperienceFrameDate1" class = "rezumeExperienceFrameDate">
+                        2013-12-02 - 2014-11-13
+                    </p>
+                    <p id = "rezumeExperienceFrameDescription1" class = "rezumeExperienceFrameDescription">
+
+                    </p>
+                    <hr class = "rezumeLine1">
+                </div>
+            </div>
+            <img id = "weirdLogo" src = "Photos2/weirdLogo.png">
+        </label>
+        <div id = "Degree1" class = "Experience">
+            <div id = "frameStudyPlace">
+                <label class = "Label">სასწავლებელი</label>
+                <label class = "InputLabelLong">
+                    <input class = "InputFieldSmall" placeholder="anzorr666@redberry.ge" onkeydown="checkEmail()">
+                    <img class = "Accepted" src = "Photos2/Accepted.png">
+                    <img class = "Denied" src = "Photos2/Denied.png">
+                </label>
+                <label class = "Hint">მინიმუმ 2 სიმბოლო</label>
+            </div>
+            <div id = "frameDegree">
+                <label class = "Label">ხარისხი</label>
+                <label class = "InputLabelSmall">
+                    <select id = "degreeSelector" placeholder="anzorr666@redberry.ge" onkeydown="checkEmail()">
+                        <option>
+                            <img src = "Photos2/Frame 133_normal.png">
+                            <b class = "optionText">საშუალო სკოლის დიპლომი</b>
+                        </option>
+                        <option class = "optionLabel">
+                            <img src = "Photos2/Frame 133_normal.png">
+                            <b class = "optionText">სხვა</b>
+                        </option>
+                    </select>
+                </label>
+            </div>
+            <div id="frameDateEnd2">
+                <label class="Label">დამთავრების რიცხვი</label>
+                <label class="InputLabelSmall">
+                    <input type="date" class="InputFieldSmall">
+                </label>
+            </div>
+            <div id="frameDegreeDescription">
+                <label class="Label">აღწერა</label>
+                <label class="InputLabelHuge">
+                    <textarea class = "InputFieldTall" placeholder="განათლების აღწერა"></textarea>
+                </label>
+            </div>
+            <hr id = "degreeLine">
+        </div>
+
+        <img id = "Elipse" src = "Photos2/Ellipse 1.png" onclick="window.location.href='../startingPage/main.html'">
+        <img id = "Vector" src = "Photos2/Vector.png" onclick="window.location.href='../startingPage/main.html'">
+        <button id = "buttonBack2" class = "buttonBack" onclick="window.location.href='pg3.html'"></button>
+        <button id = "ButtonAddDegree" onclick="createNewHr()"></button>
+        <button id = "ButtonFinish" onclick="window.location.href='finish.html'"></button>
+        <script src = "pg4.js"></script>
+    </body>
+</html>

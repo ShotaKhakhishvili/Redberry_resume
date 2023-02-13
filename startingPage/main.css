@@ -1,0 +1,67 @@
+#Line1
+{
+    position: absolute;
+    height: 0px;
+    width: 1780px;
+    left: 70px;
+    right: 70px;
+    top: 89px;
+
+    border: 1px solid #1A1A1A;
+}
+#RedBerryID 
+{
+    position: absolute;
+    width: 236px;
+    height: 38px;
+    left: 70px;
+    top: 25px;
+}
+#Img1
+{
+    position: absolute;
+    width: 299px;
+    height: 299px;
+    left: 1076px;
+    top: 473px;
+
+    mix-blend-mode: multiply;
+}
+#button {
+    /* Auto layout */
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 60px;
+    gap: 20px;
+
+    position: absolute;
+    width: 464px;
+    height: 60px;
+    left: calc(50% - 464px/2);
+    top: 513px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+    /* off black */
+
+    background: #1A1A1A;
+    border-radius: 8px;
+
+    font-family: 'Helvetica Neue';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+
+    color: #FFFFFF;
+
+
+    /* Inside auto layout */
+}

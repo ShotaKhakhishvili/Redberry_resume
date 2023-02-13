@@ -1,0 +1,957 @@
+@font-face 
+{
+    font-family: "HelveticaNeue";
+    src: url("../Assets/HelveticaNeue.ttc");
+}
+#Enlipse1
+{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 48px;
+    top: 45px;
+}
+#Vector
+{
+    position: absolute;
+    width: 9.21px;
+    height: 16px;
+    left: 62px;
+    top: 57px;
+}
+#Elipse {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 48px;
+    top: 45px;
+
+}
+
+#privateInfo {
+position: absolute;
+left: 149px;
+top: 55px;
+
+font-family: 'Helvetica Neue';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 29px;
+
+/* off black */
+
+color: #1A1A1A;
+}
+#Line1
+{
+    position: absolute;
+    width: 798px;
+    height: 0px;
+    left: 150px;
+    top: 88px;
+
+    /* off black */
+
+    border: 1px solid #1A1A1A;
+}
+.PageNumber
+{
+    position: absolute;
+    width: 29px;
+    height: 24px;
+    left: 920px;
+    top: 35px;
+
+    font-family: "HelveticaNeue";
+    src: url("./assets/fontss/HelveticaNeue.ttc");
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    /* identical to box height */
+    
+    text-align: right;
+    
+    /* off black */
+    
+    color: #1A1A1A;
+}
+#Frame
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px 24px;
+
+    position: absolute;
+    width: 328px;
+    height: 64px;
+    left: calc(50% - 328px/2 - 567px);
+    top: 20px;
+}
+#InputFrameActive
+{
+    box-sizing: border-box;
+
+    width: 371px;
+    height: 48px;
+
+    background: #FFFFFF;
+    border: 1px solid #BCBCBC;
+    border-radius: 4px;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+.InputLabelSmall
+{
+    box-sizing: border-box;
+
+    width: 371px;
+    height: 48px;
+    
+    background: #FFFFFF;
+    border: 1px solid #BCBCBC;
+    border-radius: 4px;
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+.InputLabelLong
+{
+    width: 798px;
+    height: 48px;
+    
+    background: #FFFFFF;
+    border: 1px solid #BCBCBC;
+    border-radius: 4px;
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+.InputLabelTall
+{
+    box-sizing: border-box;
+
+    width: 798px;
+    height: 103px;
+    
+    background: #FFFFFF;
+    border: 1px solid #BCBCBC;
+    border-radius: 4px;
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 1;
+}
+.InputLabelHuge
+{
+    box-sizing: border-box;
+
+    width: 798px;
+    height: 123px;
+    
+    background: #FFFFFF;
+    border: 1px solid #BCBCBC;
+    border-radius: 4px;
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 1;
+}
+.InputFieldSmall
+{
+    text-align: top left;
+    border: none;
+    outline: none;
+    resize: none;
+    font-family: "HelveticaNeue";
+    src: url("./assets/fontss/HelveticaNeue.ttc");
+    position: absolute;
+    left: 39px;
+    right: 83px;
+    top: 48px;
+    
+    /* bottom: 20px; */
+    word-wrap: break-word;
+
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    /* identical to box height, or 131% */
+
+    display: flex;
+    align-items: center;
+
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.InputFieldTall
+{
+    text-align: top left;
+    font-family: "HelveticaNeue";
+    position: absolute;
+    left: 39px;
+    right: 110px;
+    top: 48px;
+    bottom: 30px;
+    
+    /* bottom: 20px; */
+    border: none;
+    outline: none;
+    resize: none;
+    overflow: auto;
+    word-wrap: break-word;
+
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    /* identical to box height, or 131% */
+
+    display: flex;
+    align-items: center;
+
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.Label
+{
+    font-family: "HelveticaNeue";
+    src: url("./assets/fontss/HelveticaNeue.ttc");
+    
+    width: 280px;
+    height: 21px;
+    
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 21px;
+    /* identical to box height, or 131% */
+    
+    display: flex;
+    align-items: center;
+    
+    color: #000000;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+
+}
+.Hint
+{
+    font-family: 'HelveticaNeue';
+    src: url("./assets/fontss/HelveticaNeue.ttc");
+
+    width: 500px;
+    height: 21px;
+    
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 21px;
+    /* identical to box height, or 150% */
+    
+    display: flex;
+    align-items: center;
+    
+    /* შავი/500 */
+    
+    color: #2E2E2E;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 2;
+    align-self: stretch;
+    
+}
+#frameName
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px 24px;
+    gap: 8px;
+    
+    position: absolute;
+    width: 419px;
+    height: 122px;
+    left: calc(50% - 419px/2 - 624.5px);
+    top: 157px;
+}
+#frameSurname
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px 24px;
+    gap: 8px;
+    
+    position: absolute;
+    width: 419px;
+    height: 122px;
+    left: calc(50% - 419px/2 - 197.5px);
+    top: 157px;
+}
+#framDescription
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px 24px;
+    gap: 8px;
+
+    position: absolute;
+    width: 846px;
+    height: 148px;
+    left: calc(50% - 846px/2 - 411px);
+    top: 393px;
+}
+#FrameEmail
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px 24px;
+    gap: 8px;
+    
+    position: absolute;
+    width: 846px;
+    height: 122px;
+    left: calc(50% - 846px/2 - 411px);
+    top: 558px;
+}
+#FrameNumber
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px 24px;
+    gap: 8px;
+    
+    position: absolute;
+    width: 846px;
+    height: 122px;
+    left: calc(50% - 846px/2 - 411px);
+    top: 693px;
+}
+#UploadPhoto
+{
+    position: absolute;
+    width: 232px;
+    height: 22px;
+    left: 150px;
+    top: 325px;
+    
+    font-family: 'HelveticaNeue';
+    src: url("./assets/fontss/HelveticaNeue.ttc");
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+    
+    
+    /* off black */
+    
+    color: #1A1A1A;
+}
+
+#LabelInput
+{
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    width: 107px;
+    height: 27px;
+    left: 401px;
+    top: 325px;
+}
+
+.Next
+{
+    background: none; 
+    border: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 60px;
+    gap: 20px;
+    background-image: url("Photos2/Shemdegi.png");
+    
+    position: absolute;
+    width: 151px;
+    height: 48px;
+    left: 795px;
+    top: 980px;
+}
+.Title
+{
+    position: absolute;
+    width: 179px;
+    height: 29px;
+    left: 149px;
+    top: 47px;
+
+    font-family: 'HelveticaNeue';
+    font-weight: 2000;
+    font-size: 24px;
+    line-height: 29px;
+
+    /* off black */
+
+    color: #1A1A1A;
+}
+.frameExperience
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px 24px;
+    gap: 8px;
+    
+    position: absolute;
+    width: 846px;
+    height: 125px;
+    left: calc(50% - 846px/2 - 411px);
+    top: 157px;
+}
+.Accepted
+{
+    position: absolute;
+    right: 85px;
+    top: 53px;
+    /* display: none; */
+}
+.Denied
+{
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    right: 45px;
+    top: 53px;
+    /* display: none; */
+}
+.frameBoss
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px 24px;
+    gap: 8px;
+    
+    position: absolute;
+    width: 846px;
+    height: 125px;
+    left: calc(50% - 846px/2 - 411px);
+    top: 294px; 
+}
+.frameDateStart
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px 24px;
+    gap: 8px;
+    
+    position: absolute;
+    width: 419px;
+    height: 125px;
+    left: calc(50% - 419px/2 - 624.5px);
+    top: 431px;
+}
+.frameDateEnd
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px 24px;
+    gap: 8px;
+    
+    position: absolute;
+    width: 419px;
+    height: 93px;
+    left: calc(50% - 419px/2 - 197.5px);
+    top: 431px;
+}
+#frameDateEnd2
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px 24px;
+    gap: 8px;
+    
+    position: absolute;
+    width: 419px;
+    height: 93px;
+    left: calc(50% - 419px/2 - 197.5px);
+    top: 294px;
+}
+.frameDescribe
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px 24px;
+    gap: 8px;
+    
+    position: absolute;
+    width: 846px;
+    height: 168px;
+    left: calc(50% - 846px/2 - 411px);
+    top: 541px;
+}
+#Line2
+{
+    position: absolute;
+    width: 798px;
+    height: 0px;
+    left: 149px;
+    top: 759px;
+    
+    border: 1px solid #C1C1C1;
+}
+#Button4
+{
+    display: flex;
+    border: none;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 60px;
+    gap: 20px;
+
+    position:absolute;
+    width: 289px;
+    height: 48px;
+    left: calc(50% - 289px/2 - 666.5px);
+    top: 804px;
+
+    background: #62A1EB;
+    border-radius: 4px;
+    background-image: url("Photos2/Variant4.png");
+}
+.buttonBack
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 60px;
+    gap: 20px;
+    
+    position: absolute;
+    width: 113px;
+    height: 48px;
+    left: 149px;
+    top: 980px;
+    
+    border: none;
+    background: #6B40E3;
+    border-radius: 4px;
+    background-image: url("Photos2/back.png");
+}
+#ButtonFinish
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 60px;
+    gap: 20px;
+    
+    position: absolute;
+    width: 151px;
+    height: 48px;
+    right: 972px;
+    top: 980px;
+
+    border: none;    
+    background-image: url("Photos2/Finish.png");
+    border-radius: 4px;
+}
+#RezumeBackground
+{
+    position: absolute;
+    width: 822px;
+    height: 1080px;
+    right: 0px;
+    top: 0px;
+    
+    background: #FFFFFF;
+}
+#weirdLogo
+{
+    position: absolute;
+    width: 42px;
+    height: 42px;
+    left: 78px;
+    top: 994px;
+}
+#frameStudyPlace
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px 24px;
+    gap: 8px;
+    
+    position: absolute;
+    width: 846px;
+    height: 125px;
+    left: calc(50% - 846px/2 - 411px);
+    top: 157px;
+}
+#frameDegree
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px 24px;
+    gap: 8px;
+    
+    position: absolute;
+    width: 419px;
+    height: 125px;
+    left: calc(50% - 419px/2 - 624.5px);
+    top: 294px;
+    
+}
+#degreeSelector
+{
+    position: relative;
+    height: 21px;
+    width: 350px;
+    left: 16px;
+    right: 16px;
+    top: 13px;
+
+    outline: none;
+    border: none;
+    
+    font-family: 'HelveticaNeue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    /* identical to box height, or 131% */
+    
+    display: flex;
+    align-items: center;
+    
+    color: rgba(0, 0, 0, 0.6);
+}
+#frameDegreeDescription
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px 24px;
+    gap: 8px;
+    
+    position: absolute;
+    width: 846px;
+    height: 224px;
+    left: calc(50% - 846px/2 - 411px);
+    top: 405px;
+}
+#ButtonAddDegree
+{
+    border: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 60px;
+    gap: 20px;
+    
+    position: relative;
+    width: 289px;
+    height: 48px;
+    left: calc(50% - 289px/2 - 665.5px);
+    top: 719px;
+    
+    background: #62A1EB;
+    border-radius: 4px;
+    background-image: url("Photos2/addDegreeButton.png");
+}
+#degreeLine
+{
+    position: absolute;
+    width: 798px;
+    height: 0px;
+    left: 150px;
+    top: 674px;
+    
+    border: 1px solid #C1C1C1;
+}
+.optionLabel
+{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 10px 10px 16px;
+    gap: 10px;
+    
+    width: 370px;
+    height: 41px;
+    
+    background: #FFFFFF;
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.optionText
+{
+    position: relative;
+    width: 218px;
+    height: 21px;
+    
+    font-family: 'HelveticaNeue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    
+    display: flex;
+    align-items: center;
+    
+    /* off black */
+    
+    color: #1A1A1A;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.Experience
+{
+    top: 0px;
+    position: absolute;
+    width: 1920px;
+    height: 645px;
+}
+
+#rezumeName
+{
+    position: absolute;
+    width: 800px;
+    height: 42px;
+    left: 80px;
+    top: 35px;
+
+    font-family: 'HelveticaNeue';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 42px;
+    /* identical to box height */
+
+
+    color: #F93B1D;
+}
+#rezumeEmail
+{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 81px;
+    top: 129px;
+}
+#rezumeEmailVal
+{
+    font-family: 'HelveticaNeue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    white-space: normal !important;
+    word-wrap: break-word;
+    
+    /* off black */
+    
+    color: #1A1A1A;
+    
+}
+#rezumeNumber
+{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 81px;
+    top: 167px;
+}
+#rezumeNumberVal
+{
+    font-family: 'HelveticaNeue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    
+    /* off black */
+    
+    color: #1A1A1A;
+}
+#rezumePhoto
+{
+    position: absolute;
+    width: 246px;
+    height: 246px;
+    left: 501px;
+    top: 48px;
+    
+    background: url(.jpg), #D9D9D9;
+    border-radius: 133px;
+}
+#rezumeEmainAndNumber
+{
+    position: absolute;
+    width: 300px;
+    height: 21px;
+    left: 111px;
+    top: 127px;
+}
+#rezumeAboutMe
+{
+    position: absolute;
+    width: 480px;
+    height: 22px;
+    left: 80px;
+    top: 213px;
+}
+#rezumeAboutMeTitle
+{
+    font-family: 'HelveticaNeue';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    
+    color: #F93B1D;
+}
+#rezumeAboutMeVal
+{
+    font-family: 'HelveticaNeue';
+    font-style: normal;
+    font-weight: 400px;
+    font-size: 16px;
+    line-height: 22px;
+    /* or 138% */
+
+    text-transform: lowercase;
+
+    color: #000000;
+}
+.rezumeLine1
+{
+    position: relative;
+    width: 662px;
+    left: 0px;
+    right: 80px;
+
+    border: 1px solid #C8C8C8;
+}
+#rezumeExperience
+{
+    position: absolute;
+    width: 143px;
+    height: 22px;
+    left: 80px;
+    top: 365px;
+}
+#rezumeExperienceTitle
+{
+    font-family: 'HelveticaNeue';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+    
+    
+    color: #F93B1D;
+}
+.rezumeExperienceFrame
+{
+    width: 600px;
+    position: relative;
+    top: 20px;
+}
+.rezumeExperienceFrameTitle
+{
+    position: relative;
+    font-family: 'HelveticaNeue';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #1A1A1A;
+}
+.rezumeExperienceFrameDate
+{
+    top: -10px;
+    position: relative;
+    font-family: 'HelveticaNeue';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    
+    color: #919191;
+}
+.rezumeExperienceFrameDescription
+{
+    position: relative;
+    font-family: 'HelveticaNeue';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    /* or 138% */
+    
+    text-transform: capitalize;
+    
+    color: #000000;
+}
